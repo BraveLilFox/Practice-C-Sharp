@@ -1,0 +1,37 @@
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		//initialize all the assignments done by the kids
+		int breakdownMonths = 5;
+		int dove1 = 10;
+		int dove2 = 4;
+		int dove3 = 12;
+		int dove4 = 36;
+		int dove5 = 2;
+		// int means integer which is a value without any decimals at the end
+		int ren1 = 2;
+		int ren2 = 5;
+		int ren3 = 1;
+		int ren4 = 6;
+		int ren5 = 15;
+		int kk1 = 3;
+		int kk2 = 5;
+		int kk3 = 17;
+		int kk4 = 10;
+		int kk5 = 5;
+		int doveSum = dove1 + dove2 + dove3 + dove4 + dove5;
+		int renSum = ren1 + ren2 + ren3 + ren4 + ren5;
+		int kkSum = kk1 + kk2 + kk3 + kk4 + kk5;
+		decimal doveAverage = (decimal)doveSum / breakdownMonths;
+		decimal renAverage = (decimal)renSum / breakdownMonths;
+		decimal kkAverage = (decimal)kkSum / breakdownMonths;
+		Console.WriteLine("Disorders and Breakdowns:\n");
+		Console.WriteLine("Neurodivergent\t\tBreakdowns\t\tDisorder");
+		Console.WriteLine("Dove: \t\t\t\t" + doveAverage + "  \t\t\t(BPD)");
+		Console.WriteLine("Ren:  \t\t\t\t" + renAverage + "   \t\t\t(BPD)");
+		Console.WriteLine("KK:   \t\t\t\t" + kkAverage + " \t\t\t\t(ASD)");
+	}
+}
